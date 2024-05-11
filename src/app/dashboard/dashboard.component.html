@@ -1,0 +1,23 @@
+<h1 class="text-center mt-4 text-info">dashboard component</h1>
+
+<h5 *ngIf="dashemail">Email :{{dashemail}} </h5>
+<h5 *ngIf="dashemail">password :{{dashpswd}}</h5>
+
+
+
+<table class="table mt-5 shadow">
+    <thead class="p-4">
+        <tr>
+            <th>#</th>
+            <th>name</th>
+            <th>age</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor ="let user of userDetail;let i = index">
+            <td>{{i+1}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.age}}</td>
+        </tr>
+    </tbody>
+</table>
